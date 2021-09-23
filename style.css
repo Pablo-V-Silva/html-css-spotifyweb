@@ -61,7 +61,7 @@ nav, .p_content, .footer {
                             NAV
 ****************************************************** */
 nav {
-    width: 10vw;
+    width: 190px;
     height: calc(100vh - 15vh);
     background-color: black;
 }
@@ -84,11 +84,11 @@ nav {
                             PRINCIPAL SITE CONTENT
 ****************************************************** */
 .p_content {
-    width: calc(100vw - 10vw);
+    width: calc(100vw - 190px);
 }
 
 .p_content header {
-    width: calc(100vw - 10vw);
+    width: calc(100vw - 190px);
     height: 8vh;
 }
 /* ***************************************************
