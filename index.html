@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Spotify</title>
 
-    <link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;1,800&display=swap" rel="stylesheet">
-</head>
-<body class="debug clearfix">
-    
-    <nav>
-        <div class="side_container d_flex">
-            <div class="up_contain">
-                <img class="logo" src="./img/logo.svg" alt="logo di spotify">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;1,800&display=swap"
+			rel="stylesheet">
+	</head>
+	<body class="debug clearfix">
 
-            </div>
-            <div class="down_contain"></div>
-        </div>
-    </nav>
-    <!-- /side nav site -->
+		<nav>
+			<div class="side_container d_flex">
+				<div class="up_contain">
+					<div class="logo">
+						<img src="./img/logo.svg" alt="logo di spotify">
+					</div>
 
-    <div class="p_content">
-        <header></header>
-        <!-- /call to action -->
-        <main></main>
-        <!-- /music menu -->
-    </div>
-    <!-- /principal site content -->
+					<div class="home_options">
+						<div class="card d_flex">
+							<img class="icon_card" src="./img/home.svg" alt="Pulsante per tornare sulla home" width="30px">
+							<h3 class="card_text first">Home</h3>
+						</div>
+						<div class="card d_flex">
+							<img class="icon_card" src="./img/home.svg" alt="Pulsante per tornare sulla home" width="30px">
+							<h3 class="card_text"><a href="">Home</a></h3>
+						</div>
+						<div class="card"></div>
+					</div>
+				</div>
+				<div class="down_contain"></div>
+			</div>
+		</nav>
+		<!-- /side nav site -->
 
-    <div class="footer"></div>
-    <!-- /song's menu -->
-    
-</body>
+		<div class="p_content">
+			<header></header>
+			<!-- /call to action -->
+			<main></main>
+			<!-- /music menu -->
+		</div>
+		<!-- /principal site content -->
+
+		<div class="footer"></div>
+		<!-- /song's menu -->
+
+	</body>
 </html>

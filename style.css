@@ -51,6 +51,15 @@ ______________________________________________________ */
 nav, .p_content, .footer {
     float: left;
 }
+
+a {
+    text-decoration: none;
+    color: #5B5B5B;
+}
+
+h3.first {
+    color: white;
+}
 /* ***************************************************
                             /UTILITY
 ****************************************************** */
@@ -61,9 +70,10 @@ nav, .p_content, .footer {
                             NAV
 ****************************************************** */
 nav {
-    width: 190px;
+    width: 250px;
     height: calc(100vh - 15vh);
     background-color: black;
+    color: white;
 }
 
 .up_contain {
@@ -72,7 +82,17 @@ nav {
 }
 
 .up_contain .logo {
+    width: 80%;
     padding: 10px 0;
+}
+
+.home_options {
+    padding: 1rem 0;
+}
+
+.card.d_flex {
+    justify-content: flex-start;
+    align-items: center;
 }
 /* ***************************************************
                             /NAV
@@ -84,11 +104,11 @@ nav {
                             PRINCIPAL SITE CONTENT
 ****************************************************** */
 .p_content {
-    width: calc(100vw - 190px);
+    width: calc(100vw - 250px);
 }
 
 .p_content header {
-    width: calc(100vw - 190px);
+    width: calc(100vw - 250px);
     height: 8vh;
 }
 /* ***************************************************
