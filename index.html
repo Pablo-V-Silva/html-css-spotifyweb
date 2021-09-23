@@ -30,7 +30,7 @@
 
           <div class="home_options">
             <div class="card d_flex">
-              <img class="icon_card" src="./img/home.svg" alt="Pulsante per
+                <img class="icon_card" src="./img/home.svg" alt="Pulsante per
                 tornare
                 sulla home" width="30px">
               <h3 class="card_text first"><a href="" class="click">Home</a></h3>
@@ -53,7 +53,7 @@
             <h2>PLAYLIST</h2>
             <div class="card d_flex">
               <div class="addplaylist d_flex">+</div>
-              <h3 class="card_text"><a class="noclick" href="">Crea Playlist</a></h3>
+              <h3 class="card_text"><Crea class="noclick" href="">Crea Playlist</a></h3>
             </div>
             <div class="scrollplaylist">
               <ul>
@@ -114,34 +114,48 @@
             ascoltando" width="60px">
           <div class="song_name">
             <h3 class="click">Sinister</h3>
-            <p class="click">Brano nome</p>
+            <p class="noclick">Brano nome</p>
           </div>
-          <div class="icon_card">
-            <i class="far fa-heart"></i>
-            <i class="far fa-folder"></i>
+          <div class="hover_card">
+            <i class="icon_hover far fa-heart"></i>
+            <i class="icon_hover far fa-folder"></i>
           </div>
         </div>
 
-        <div class="play_menu d_flex">
-          <div class="icon_card">
+        <div class="play_menu center d_flex">
+          <div class="icon_menu">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
-            <i class="far fa-play-circle"></i>
+            <i class="center_icon far fa-play-circle"></i>
             <i class="fas fa-step-forward"></i>
             <i class="revert fas fa-undo"></i>
           </div>
+          <div class="song_time d_flex">
+            <p>0:25</p>
+            <div class="song">
+              <div class="song_moment d_flex">
+                <div class="song_bar"></div>
+                <div class="song_btn"></div>
+              </div>
+            </div>
+            <p>4:20</p>
+          </div>
         </div>
 
-        <div class="play_menu d_flex">
-          <img src="./img/sinister.jpeg" alt="Copertina della canzone che stai
-            ascoltando" width="60px">
-          <div class="song_name">
-            <h3 class="click">Sinister</h3>
-            <p class="noclick">Brano nome</p>
+        <div class="play_menu grow d_flex">
+          <div class="hover_card">
+            <i class="icon_hover fas fa-list"></i>
+            <i class="icon_hover fas fa-desktop"></i>
+            <i class="icon_hover fas fa-volume-up"></i>
           </div>
-          <div class="icon_card">
-            <i class="far fa-heart"></i>
-            <i class="far fa-folder"></i>
+
+          <div class="volume_settings d_flex">
+            <div class="volume">
+              <div class="power_volume d_flex">
+                <div class="volume_bar"></div>
+                <div class="volume_btn"></div>
+              </div>
+            </div>
           </div>
         </div>
         
