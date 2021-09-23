@@ -15,6 +15,10 @@
     display: flex;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* _____________________________________________________
                             DEBUG 
 ________________________________________________________*/
@@ -59,6 +63,16 @@ nav, .p_content, .footer {
 nav {
     width: 10vw;
     height: calc(100vh - 15vh);
+    background-color: black;
+}
+
+.up_contain {
+    width: 100%;
+    padding: 10px;
+}
+
+.up_contain .logo {
+    padding: 10px 0;
 }
 /* ***************************************************
                             /NAV
