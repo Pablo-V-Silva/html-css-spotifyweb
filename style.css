@@ -29,10 +29,10 @@ ________________________________________________________*/
 
 .debug .p_content {
     background-color: #141922;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 100px);
 }
 
-.debug .footer {
+.debug footer {
     background-color: #282828;
 }
 
@@ -48,7 +48,7 @@ ______________________________________________________ */
 /* ***************************************************
                             UTILITY
 ****************************************************** */
-nav, .p_content, .footer {
+nav, .p_content, footer {
     float: left;
 }
 
@@ -84,11 +84,11 @@ nav, .p_content, .footer {
 ****************************************************** */
 nav {
     width: 260px;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 100px);
     background-color: black;
     color: white;
     position: relative;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .side_container.d_flex {
@@ -135,10 +135,11 @@ nav {
 }
 
 .scrollplaylist {
-  max-height: 234px;
-  min-height: 50px;
+  min-height: calc(100vh - 96vh);
+  max-height: calc(100vh - 76vh);
   overflow-y: auto;
 }
+
 .scrollplaylist ul {
   list-style: none;
 }
@@ -150,6 +151,7 @@ nav {
 
 .down_contain {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .circlegray {
@@ -177,13 +179,28 @@ nav hr {
 /* ***************************************************
                             PRINCIPAL SITE CONTENT
 ****************************************************** */
-.p_content {
-    width: calc(100vw - 260px);
-}
-
 .p_content header {
     width: calc(100vw - 260px);
-    height: 8vh;
+    height: 81px;
+}
+
+header.d_flex {
+    justify-content: end;
+    align-items: center;
+}
+
+button.header_cta {
+    padding: 0.8rem 1rem;
+    border-radius: 4rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.p_content {
+    width: calc(100vw - 260px);
 }
 /* ***************************************************
                             /PRINCIPAL SITE CONTENT
@@ -194,10 +211,32 @@ nav hr {
 /* ***************************************************
                             SONG'S MENU
 ****************************************************** */
-.footer {
+footer {
     width: 100vw;
-    height: 10vh;
+    height: 100px;
 }
+
+.menu_container {
+  width: 100%;
+  height: 100%;
+}
+
+.menu_container.d_flex {
+  justify-content: space-between;
+}
+
+.play_menu.d_flex {
+  height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon_card *{
+  margin-left: 1rem;
+}
+
+
 /* ***************************************************
                             /SONG'S MENU
 ****************************************************** */
