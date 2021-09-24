@@ -68,7 +68,8 @@ nav, .p_content, footer {
 }
 
 .icon_card,
-.down_contain img {
+.down_contain img,
+.overlay i {
   cursor: pointer;
 }
 
@@ -264,6 +265,7 @@ ul.d_flex {
 .genres:hover .underyellow {
   visibility: visible;
 }
+/* /Musical genres */
 
 .main_contain {
     width: 95%;
@@ -284,6 +286,29 @@ h2.main_title {
     font-size: 2.5rem;
 }
 
+.img_track_contain.d_flex {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: #000000c9;
+    font-size: 100%;
+    visibility: hidden;
+}
+
+.img_track_contain:hover .overlay{
+  visibility: visible;
+}
+/* /Recent play */
+
 .card_track {
   width: 16%;
   text-align: center;
@@ -293,18 +318,27 @@ h2.main_title {
 }
 
 .card_track .title_track,
-.created_for p {
+.created_for p,
+.popular_artist p {
   color: gray;
 }
 
 .title_track_contain *,
-.created_for *{
+.created_for *,
+.popular_artist *{
   padding: 0.5rem 0;
 }
 
-.created_for_track .card_track {
+.created_for_track .card_track,
+.popular_artist .card_track {
     margin-right: 1rem;
 }
+/* /Created for */
+
+.popular_artist img {
+  border-radius: 50%;
+}
+/* /Popular artist */
 /* ***************************************************
                             /PRINCIPAL SITE CONTENT
 ****************************************************** */
