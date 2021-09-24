@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* _____________________________________________________
@@ -217,6 +218,11 @@ button.header_cta:hover {
     width: calc(100% - 260px);
 }
 
+main.music_container {
+    overflow-y: scroll;
+    max-height: calc(100vh - 175px);
+}
+
 .col {
   width: 300px;
   height: 300px;
@@ -280,10 +286,14 @@ footer {
 }
 
 .icon_menu *{
-  margin: 0 3rem;
+  margin: 0 1.5rem;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.icon_menu.d_flex {
+    align-items: center;
 }
 
 .center_icon {
@@ -292,10 +302,6 @@ footer {
 
 .center_icon:hover {
   transform: scale(1.3);
-}
-
-.revert {
-  transform: rotate(180deg);
 }
 
 .song_time.d_flex {
