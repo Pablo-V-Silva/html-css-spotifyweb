@@ -55,7 +55,7 @@ nav, .p_content, footer {
 
 .click, .noclick {
     text-decoration: none;
-    margin-left: 1rem;
+    margin: 0 1rem;
     cursor: pointer;
 }
 
@@ -116,7 +116,7 @@ nav {
 }
 
 nav .card.d_flex:hover,
-ul li:hover {
+nav ul li:hover {
     border-left: 2px solid green;
     padding-left: 1.3rem;
     margin-left: -1rem;
@@ -221,12 +221,48 @@ button.header_cta:hover {
 main.music_container {
     overflow-y: scroll;
     max-height: calc(100vh - 175px);
+    background-color: #141922;
 }
 
-.col {
-  width: 300px;
-  height: 300px;
-  background-color: red;
+.musical_genres ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.musical_genres.d_flex {
+    width: 100%;
+    justify-content: center;
+}
+
+ul.d_flex {
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.musical_genres .underyellow {
+    margin: 0.4rem auto;
+    width: 50%;
+    border: 2px solid yellow;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+.musical_genres li {
+    padding: 1.4rem 1rem 0.6rem 1rem;
+}
+
+.musical_genres li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.musical_genres li a:hover {
+  color: white;
+}
+
+.genres:hover .underyellow {
+  visibility: visible;
 }
 /* ***************************************************
                             /PRINCIPAL SITE CONTENT
@@ -261,6 +297,10 @@ footer {
 
 .play_menu img {
   margin: 20px 0;
+}
+
+p.noclick {
+    width: 100px;
 }
 
 .hover_card *{
