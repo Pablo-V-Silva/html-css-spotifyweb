@@ -189,13 +189,14 @@ nav hr {
                             PRINCIPAL SITE CONTENT
 ****************************************************** */
 .p_content header {
-    width: calc(100vw - 260px);
+    width: calc(100% - 260px);
     height: 81px;
 }
 
 header.d_flex {
     justify-content: end;
     align-items: center;
+    width: 100%;
 }
 
 button.header_cta {
@@ -213,7 +214,7 @@ button.header_cta:hover {
 }
 
 .p_content {
-    width: calc(100vw - 260px);
+    width: calc(100% - 260px);
 }
 /* ***************************************************
                             /PRINCIPAL SITE CONTENT
