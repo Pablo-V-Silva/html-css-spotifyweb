@@ -264,6 +264,47 @@ ul.d_flex {
 .genres:hover .underyellow {
   visibility: visible;
 }
+
+.main_contain {
+    width: 95%;
+    margin: auto;
+}
+
+.recent_play_contain {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.recent_play_track.d_flex {
+    justify-content: space-between;
+}
+
+h2.main_title {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.card_track {
+  width: 16%;
+  text-align: center;
+  color: white;
+  margin: 1rem 0;
+  padding: 2rem 0;
+}
+
+.card_track .title_track,
+.created_for p {
+  color: gray;
+}
+
+.title_track_contain *,
+.created_for *{
+  padding: 0.5rem 0;
+}
+
+.created_for_track .card_track {
+    margin-right: 1rem;
+}
 /* ***************************************************
                             /PRINCIPAL SITE CONTENT
 ****************************************************** */
