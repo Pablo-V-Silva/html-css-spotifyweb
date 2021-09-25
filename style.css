@@ -221,6 +221,7 @@ button.header_cta:hover {
 
 main.music_container {
     overflow-y: scroll;
+    overflow-x: hidden;
     max-height: calc(100vh - 175px);
     background-color: #141922;
 }
@@ -360,7 +361,7 @@ footer {
 }
 
 .menu_container.d_flex {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .play_menu.d_flex {
@@ -379,7 +380,7 @@ p.noclick {
 }
 
 .hover_card *{
-  margin-left: 1rem;
+  padding-right: 1rem;
   color: #5A5A5A;
   cursor: pointer;
 }
@@ -401,14 +402,15 @@ p.noclick {
 }
 
 .icon_menu *{
-  margin: 0 1.5rem;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .icon_menu.d_flex {
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .center_icon {
@@ -522,7 +524,9 @@ p.noclick {
 /* ***************************************************
                             MEDIA QUARY
 ****************************************************** */
-
+@media screen and (max-width:1024px) {
+  
+}
 /* ***************************************************
                             /MEDIA QUARY
 ****************************************************** */
