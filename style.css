@@ -121,6 +121,10 @@ nav {
     margin-bottom: 1.4rem;
 }
 
+.logo_s {
+  display: none;
+}
+
 nav .card.d_flex:hover,
 nav ul li:hover {
     border-left: 2px solid green;
@@ -357,13 +361,10 @@ footer {
     background-color: #282828;
 }
 
-.menu_container {
+.menu_container.d_flex {
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-}
-
-.menu_container.d_flex {
-  justify-content: space-around;
 }
 
 .play_menu.d_flex {
@@ -371,10 +372,6 @@ footer {
     align-items: center;
     color: white;
     padding: 0 1rem;
-}
-
-.play_menu img {
-  margin: 20px 0;
 }
 
 p.noclick {
@@ -467,13 +464,10 @@ p.noclick {
 }
 
 /*  */
-.play_menu.grow.d_flex {
+.play_menu.d_flex {
     width: 20%;
 }
 
-.play_menu .hover_card {
-  width: 50%;
-}
 
 .volume_settings.d_flex {
     width: 100%;
@@ -595,6 +589,95 @@ footer .noclick{
 }
 /* Qaury 768px */
 
+@media screen and (max-width:425px) {
+  nav {
+    width: 70px;
+  }
+  .logo_s {
+    display: block;
+  }
+
+  .logo_l {
+    display: none;
+  }
+
+  .card.d_flex .card_text,
+  .card.d_flex .noclick,
+  .down_contain hr {
+    display: none;
+  }
+
+  .playlist_options *{
+    display: none;
+  }
+
+  header.d_flex {
+    justify-content: end;
+    align-items: center;
+    width: calc(100% - 70px);
+}
+
+.p_content {
+    width: calc(100% - 70px);
+    height: calc(100% - 56px);
+}
+
+.musical_genres li {
+    font-size: 0.8rem;
+}
+
+.recent_play_contain .main_title {
+  font-size: 1.5rem;
+}
+
+button.header_cta {
+    padding: 0.3rem 0.4rem;
+    border-radius: 4rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin: 1rem 2rem;
+    font-size: 0.7rem;
+}
+
+main.music_container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: calc(100vh - 156px);
+    background-color: #141922;
+}
+
+footer .song_name{
+ display: none;
+}
+
+.hover_card * {
+    padding: 0.5rem;
+    color: #5A5A5A;
+    cursor: pointer;
+}
+
+.icon_menu.d_flex {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.song_btn {
+    width: 20px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.song_time.d_flex *{
+  padding: 0 0.2rem;
+}
+}
 
 /* ***************************************************
                             /MEDIA QUARY
