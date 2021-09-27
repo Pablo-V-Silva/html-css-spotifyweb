@@ -253,7 +253,7 @@ ul.d_flex {
 }
 
 .musical_genres li {
-    padding: 1.4rem 1rem 0.6rem 1rem;
+    padding: 1.4rem 0.7rem 0.6rem 0.7rem;
 }
 
 .musical_genres li a {
@@ -278,10 +278,6 @@ ul.d_flex {
 .recent_play_contain {
   width: 100%;
   margin: 2rem 0 1rem 0;
-}
-
-.recent_play_track.d_flex {
-    justify-content: space-between;
 }
 
 h2.main_title {
@@ -310,18 +306,13 @@ h2.main_title {
 .img_track_contain:hover .overlay{
   visibility: visible;
 }
-
-.quary_1024 {
-  display: none;
-}
 /* /Recent play */
 
 .card_track {
-  width: 16%;
+  width: calc(100% / 6);
   text-align: center;
   color: white;
-  margin: 1rem 0;
-  padding: 2rem 0;
+  padding: 2rem 5px 0 5px;
 }
 
 .card_track .title_track,
@@ -531,8 +522,61 @@ p.noclick {
                             MEDIA QUARY
 ****************************************************** */
 @media screen and (max-width:1024px) {
-  
+  .recent_play_track.d_flex {
+    flex-wrap: wrap;
+  }
+
+  .card_track {
+    width: calc(100% / 4);
+  }
+
+  .volume {
+    width: 60%;
+    height: 6px;
+    background-color: #5A5A5A;
+    border-radius: 1rem;
+    margin: auto;
 }
+}
+/* Quary 1024px */
+
+@media screen and (max-width:768px) {
+  .recent_play_track.d_flex {
+    flex-wrap: wrap;
+  }
+  .card_track {
+    width: calc(100% / 2);
+  }
+
+  .recent_play_contain div h2,
+  .created_for div h2,
+  .popular_artist div h2 {
+    font-size: 2rem;
+  }
+
+  .hover_card * {
+    padding-right: 0.2rem;
+    color: #5A5A5A;
+    cursor: pointer;
+}
+
+.play_menu.center.d_flex {
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.song {
+    width: 60%;
+    height: 6px;
+    background-color: #5A5A5A;
+    border-radius: 1rem;
+}
+}
+/* Qaury 768px */
+
+
 /* ***************************************************
                             /MEDIA QUARY
 ****************************************************** */
