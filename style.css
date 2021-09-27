@@ -531,45 +531,7 @@ p.noclick {
                             MEDIA QUARY
 ****************************************************** */
 @media screen and (max-width:1024px) {
-  .musical_genres {
-    display: none;
-  }
-  .quary_1024 ul.d_flex {
-    flex-wrap: wrap;
-}
-
-  .quary_1024 .genres {
-    padding: 1rem 0.2rem 0.2rem 0.2rem;
-    min-width: 115px;
-  }
-
-  .musical_genres.quary_1024 ul {
-    width: 100%;
-  }
-
-  .musical_genres.quary_1024 {
-    text-align: center;
-  }
-
-  .musical_genres.quary_1024 {
-    width: 95%;
-    margin: auto;
-  }
-  .recent_play_track.d_flex {
-    display: none;
-  }
-
-  .quary_1024 {
-    display: block;
-  }
-
-  .row_quary_1024 .card_track {
-    float: left;
-    width: 25%;
-    padding-right: 0.5rem;
-    margin-bottom: -4rem;
-  }
-
+  
 }
 /* ***************************************************
                             /MEDIA QUARY
