@@ -49,7 +49,12 @@ ______________________________________________________ */
 /* ***************************************************
                             UTILITY
 ****************************************************** */
-nav, .p_content, footer {
+.all_contains.clearfix {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+nav, .p_content {
     float: left;
 }
 
@@ -537,6 +542,11 @@ p.noclick {
     border-radius: 1rem;
     margin: auto;
 }
+
+footer .click,
+footer .noclick{
+  margin: 0 0.3rem;
+}
 }
 /* Quary 1024px */
 
@@ -572,6 +582,15 @@ p.noclick {
     height: 6px;
     background-color: #5A5A5A;
     border-radius: 1rem;
+}
+
+.musical_genres li {
+    padding: 0.4rem 0.5rem 0.2em 0.5rem;
+}
+
+footer .click,
+footer .noclick{
+  margin: 0 0.2rem;
 }
 }
 /* Qaury 768px */
