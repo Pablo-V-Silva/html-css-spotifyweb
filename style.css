@@ -379,7 +379,6 @@ p.noclick {
 }
 
 .hover_card *{
-  padding-right: 1rem;
   color: #5A5A5A;
   cursor: pointer;
 }
@@ -586,6 +585,16 @@ footer .click,
 footer .noclick{
   margin: 0 0.2rem;
 }
+
+.song_btn {
+    width: 20px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+}
 }
 /* Qaury 768px */
 
@@ -676,6 +685,14 @@ footer .song_name{
 
 .song_time.d_flex *{
   padding: 0 0.2rem;
+}
+
+.song_time.d_flex p {
+  display: none;
+}
+
+.song {
+  margin: auto;
 }
 }
 
